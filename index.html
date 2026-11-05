@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fixings</title>
+  </head>
+  <body>
+    <header class="topbar">
+      <strong class="brand">Fixings</strong>
+      <input id="name" class="name" aria-label="Design name" />
+      <span class="spacer"></span>
+      <button id="new">New</button>
+      <button id="open">Open…</button>
+      <button id="save">Save</button>
+      <span class="sep"></span>
+      <button id="export-svg" class="primary">Export SVG</button>
+      <button id="export-png">Export PNG</button>
+      <input id="file" type="file" accept=".json,application/json" hidden />
+    </header>
+    <main class="layout">
+      <aside id="panel" class="panel"></aside>
+      <section class="canvas">
+        <div id="preview" class="preview"></div>
+        <ul id="warnings" class="warnings"></ul>
+      </section>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
